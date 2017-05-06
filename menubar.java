@@ -33,16 +33,12 @@ public class  menubar extends JFrame  {
 
     public menubar () throws IOException {
         init();
+        JPanel game = new newgame();
+        add(game);
+        pack();
     }
 
     public void init() throws IOException {
-        //frame
-        //System.out.print("asdfadfasfd");
-
-        newgame game = new newgame();
-        add(game);
-
-        setSize(new Dimension(1366,768));
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 
         //menu bar
